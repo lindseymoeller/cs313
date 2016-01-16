@@ -1,0 +1,99 @@
+body {
+    font-family: 'Corben', cursive;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px auto;
+    width: 1000px;
+        padding-bottom: 15px;
+        background-color: #d0c5d9;
+ }
+ 
+ h1 {
+    font-family: 'Corben', cursive;
+    text-align: center;
+ }
+ 
+ header {
+     background-color: white;
+     height: 220px;
+     padding-bottom: 10px;
+     text-align: center;
+     width: 1000px;
+ }
+ 
+ .logo {
+     padding: 10px;
+ }
+
+.run {
+	float: left;
+	height: 300px;
+	width: auto;
+	padding: 0 25px 10px 0;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    background:white;
+    border-radius: 20px 20px;
+}
+ 
+.menu {
+    width:750px;
+    margin:20px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Corben', cursive;
+    background-color: #d0c5d9;
+    text-decoration: none !important;
+        list-style-type: none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#402356;
+    text-decoration: none;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:white;
+}
+ 
+.menu > ul > li {
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#210E30;
+}
+ 
+
+#intro {
+  font-family: 'Corben', cursive;
+    margin: 20px auto;
+        padding: 25px;
+        background-color: white;
+        float: left;
+        width: 950px;
+}
+
+footer {
+    clear: both;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+}
+ 
