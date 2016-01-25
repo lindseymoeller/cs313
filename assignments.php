@@ -19,7 +19,7 @@
        
     <main id="intro">
         <h3>Assignments</h3>
-		<p>PHP Survey <a href="/php_survey.php"</p>
+		<p><a href="/php_survey.php"></a>PHP Survey</a></p>
 	</main>
     <footer>
  		Copyright &copy; Lindsey Moeller <?php print date("2015"); ?>
