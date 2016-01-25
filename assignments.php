@@ -11,7 +11,7 @@
 			<img alt="logo" src="/Untitled-1.jpg" id="logo">
      		<ul>
                 <li><a href="/index.php">Home</a></li>
-                <li><a href="/about.php">Assignments</a></li>
+                <li><a href="/assignments.php">Assignments</a></li>
 			</ul>
 		</div>
 	</header>
@@ -19,7 +19,7 @@
        
     <main id="intro">
         <h3>Assignments</h3>
-		<p><a href="/php_survey.php"></a>PHP Survey</a></p>
+		<p><a href="/php_survey.php">PHP Survey</a></p>
 	</main>
     <footer>
  		Copyright &copy; Lindsey Moeller <?php print date("2015"); ?>
