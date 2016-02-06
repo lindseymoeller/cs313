@@ -1,0 +1,1 @@
+Which is better: Vanilla: NAN%Chocolate: NAN%Favorite holiday: Christmas: NAN%My birthday: NAN%4th of July: NAN%Thanksgiving: NAN%Favorite animal: Coati: NAN%Giraffe: NAN%Platypus: NAN%Narwhal: NAN%Favorite color: Red: NAN%Green: NAN%Blue: NAN%Yellow: NAN%

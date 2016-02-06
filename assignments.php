@@ -20,6 +20,7 @@
     <main id="intro">
         <h3>Assignments</h3>
 		<p><a href="/php_survey.php">PHP Survey</a></p>
+		<p><a href="/week5.php">Week 5 - Database Access</a></p>
 	</main>
     <footer>
  		Copyright &copy; Lindsey Moeller <?php print date("2015"); ?>
