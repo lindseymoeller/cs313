@@ -1,20 +1,11 @@
+<?php include 'view/header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
         <title>Home | CS313</title>
     </head>
-<header>
-		<div class="menu">  
-			<link href="/style.css" type="text/css" rel="stylesheet" />
-			<h2>CS 313 - Lindsey Moeller</h2>
-			<img alt="logo" src="/Untitled-1.jpg" id="logo">
-     		<ul>
-                <li><a href="/index.php">Home</a></li>
-                <li><a href="/assignments.php">Assignments</a></li>
-			</ul>
-		</div>
-	</header>
     
        
     <main id="intro">
@@ -29,7 +20,6 @@
 				<li>I don't like milk</li>
 			</ul>
 	</main>
-    <footer>
- 		Copyright &copy; Lindsey Moeller <?php print date("2015"); ?>
-    </footer>
 </html>
+
+<?php include 'view/footer.php'; ?>

@@ -2,30 +2,20 @@
 require 'connect.php';
 include 'view/header.php'; 
 
-	try {
+if (isset($_POST['search'])) {
+	$name = $_POST['search'];
 		$db = dbConnect();
-		$query = $db->prepare("SELECT * FROM contacts");
+		$query = $db->prepare("SELECT * FROM contacts WHERE name = '$name'");
 		$query->execute();
 		$contacts = $query->fetchAll();
-	} catch (PDOException $e) {
-		echo "Error: " . $e->getMessage();
-	}
+} else {
+	echo "No results found";
+}
 
-	
 ?>
 
-<!DOCTYPE html>
-
-<body>
-<h2>Address Book</h2>
-<form method="post" action="search_results.php">
-	<input name="search" type="text" placeholder="search names" size="20"/>
-	<input type="submit" value="Search"/>
-</form>
-
-<br>
-
-	<table>
+<p>Search Results</p>
+<table>
             <tr>
                 <th>Name</th>
                 <th>Address</th>
@@ -44,7 +34,9 @@ include 'view/header.php';
 			</tr>
 		 <?php endforeach; ?>
         </table>
-</body>
+
+<p><a href="contacts.php">Back to search</a></p>
+
+
 <?php require 'view/footer.php';
 ?>
-
