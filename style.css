@@ -97,3 +97,7 @@ footer {
     padding: 25px;
 }
  
+.border {
+	border: 1px dashed;
+	padding: 5px;
+}

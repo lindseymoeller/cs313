@@ -13,6 +13,7 @@
         <h3>Assignments</h3>
 		<p><a href="/php_survey.php">PHP Survey</a></p>
 		<p><a href="/contacts.php">Week 5 - Database Access</a></p>
+		<p><a href="/login.php">Week 6 - Database Modification</a></p>
 	</main>
 </html>
 

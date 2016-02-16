@@ -3,7 +3,7 @@ require 'connect.php';
 include 'view/header.php'; 
 
 if (isset($_POST['search'])) {
-	$name = $_POST['search'];
+		$name = $_POST['search'];
 		$db = dbConnect();
 		$query = $db->prepare("SELECT * FROM contacts WHERE name = '$name'");
 		$query->execute();
