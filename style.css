@@ -101,3 +101,11 @@ footer {
 	border: 1px dashed;
 	padding: 5px;
 }
+
+#register {
+	float: right;
+}
+
+#login {
+	float: left;
+}

@@ -3,10 +3,10 @@ require 'connect.php';
 include 'view/header.php'; 
 
 if (isset($_POST['submit'])) {
-	 	$name = ($_POST['name']);
-        $address = ($_POST['address']);
-		$phone = ($_POST['phone']);
-		$birthday = ($_POST['birthday']);
+	 	$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
+		$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+		$birthday = filter_input(INPUT_POST, 'birthday', FILTER_SANITIZE_STRING);;
 		$contact_id = ($_POST['contact_id']);
 		$db = dbConnect();
 		$query = $db->prepare("UPDATE contacts SET name='$name', address='$address', phone='$phone', birthday='$birthday' WHERE contact_id = '$contact_id'");

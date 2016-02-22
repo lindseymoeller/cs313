@@ -11,10 +11,10 @@ include 'view/header.php';
 
 if (isset($_POST['submit'])) {
 	 	$user_id = ($_POST['user_id']);
-		$name = ($_POST['name']);
-        $address = ($_POST['address']);
-		$phone = ($_POST['phone']);
-		$birthday = ($_POST['birthday']);
+		$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
+		$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+		$birthday = filter_input(INPUT_POST, 'birthday', FILTER_SANITIZE_STRING);
 		$db = dbConnect();
 		$query = $db->prepare("INSERT INTO contacts (name, address, phone, birthday, user_id) VALUES ('$name', '$address', '$phone', '$birthday', '$user_id')");
 		$query->execute();
